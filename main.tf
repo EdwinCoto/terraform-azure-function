@@ -16,7 +16,7 @@ resource "azurerm_service_plan" "function_plan" {
   location            = azurerm_resource_group.function_rg.location
   resource_group_name = azurerm_resource_group.function_rg.name
   sku_name            = "Y1" # Dynamic SKU for Azure Functions
-  os_type             = "windows"
+  os_type             = "Windows"
 
 }
 
