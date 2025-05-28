@@ -35,7 +35,7 @@ resource "azurerm_windows_function_app" "function_app" {
   app_settings = {
     "FUNCTIONS_EXTENSION_VERSION" = "~4"
     "FUNCTIONS_WORKER_RUNTIME"    = "node"
-    //"WEBSITE_NODE_DEFAULT_VERSION" = "20" # Specify the Node.js version
+    "WEBSITE_NODE_DEFAULT_VERSION" = "~20" # Specify the Node.js version
     "AzureWebJobsStorage"         = azurerm_storage_account.function_storage.primary_connection_string
   }
 }
