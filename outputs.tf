@@ -1,7 +1,7 @@
 output "function_endpoint" {
-  value = azurerm_function_app.example.default_hostname
+  value = azurerm_function_app.function_app.default_hostname
 }
 
 output "function_id" {
-  value = azurerm_function_app.example.id
+  value = azurerm_function_app.function_app.id
 }
