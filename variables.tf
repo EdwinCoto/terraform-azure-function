@@ -13,8 +13,3 @@ variable "location" {
   type        = string
   default     = "East US"
 }
-
-variable "app_service_plan_id" {
-  description = "The ID of the App Service Plan to use for the Azure Function."
-  type        = string
-}
